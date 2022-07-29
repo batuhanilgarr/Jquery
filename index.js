@@ -86,12 +86,42 @@
 
 
 // Sayfa üzerinde klavyede tıklanan tuşları gösterme //
-$(document).keypress(function (e) {
-  console.log(e.key)
-})
+// $(document).keypress(function (e) {
+//   console.log(e.key)
+// })
 
 
 // Sayfa üzerinde klavyede tıklanan tuşları h1 değerini değiştirerek gösterme //
-$(document).keypress(function (e) {
-  $("h1").text(e.key);
-})
+// $(document).keypress(function (e) {
+//   $("h1").text(e.key);
+// })
+
+
+// Mouse ile H1'in üzerine gelince renk değiştirmesi //
+// mouse eventlerine bak mouseover, click mouseout ... //
+
+// $("h1").on("mouseover", function () {
+//  $("h1").css("color", "purple");
+// })
+
+// $('h1').on('click', function () {
+//   $('h1').css('color', 'purple')
+// })
+
+
+// JQuery ile istenilen elemanı ekrana ekleme // 
+// $('h1').before('<button>New</button>') // Önce
+// $('h1').after('<button>New</button>') // Sonra
+// $('h1').prepend('<button>New</button>') // Sol hiza
+// $('h1').append('<button>New</button>') // Sağ Hiza
+
+
+// $('h1').append('<button>New</button>') // Sağ Hiza
+// aynı görevi şu şekilde yapabiliriz
+// $('h1').after('<h1><button>New</button>Hello</h1>')
+
+
+// Belirtilen elemanı silmek için //
+// $("button").remove();
+
+
