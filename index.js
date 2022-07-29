@@ -65,10 +65,33 @@
 
 
 // Button sayısını tespit etme ve sonrasında tıklandığın h1 rengini değiştirme //
-for (var i = 0; i < 5; i++) {
- document.querySelectorAll("button")[i].addEventListener("click", function(){
-  document.querySelector("h1").style.color = "purple"
- });
-}
+// for (var i = 0; i < 5; i++) {
+//  document.querySelectorAll("button")[i].addEventListener("click", function(){
+//   document.querySelector("h1").style.color = "purple"
+//  });
+// }
 
-// //
+// Aynısını JQuery ile yapmak için ; 
+
+// $("button").click(function(){
+//  $("h1").css("color", "purple");
+// });
+
+
+
+// input kısmına girilen değerleri tek tek consol'da gösterme //
+// $("input").keypress(function(e){
+//  console.log(e.key);
+// });
+
+
+// Sayfa üzerinde klavyede tıklanan tuşları gösterme //
+$(document).keypress(function (e) {
+  console.log(e.key)
+})
+
+
+// Sayfa üzerinde klavyede tıklanan tuşları h1 değerini değiştirerek gösterme //
+$(document).keypress(function (e) {
+  $("h1").text(e.key);
+})
