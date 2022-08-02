@@ -104,9 +104,9 @@
 //  $("h1").css("color", "purple");
 // })
 
-// $('h1').on('click', function () {
-//   $('h1').css('color', 'purple')
-// })
+$('h1').on('click', function () {
+  $('h1').css('color', 'purple')
+})
 
 
 // JQuery ile istenilen elemanı ekrana ekleme // 
